@@ -4,9 +4,10 @@ import (
 	"log"
 	"os"
 
-	_ "github.com/goinaction/code/chapter2/sample/matchers"
+	_ "github.com/interma/code/chapter2/sample/matchers"
+	"github.com/interma/code/chapter2/sample/search"
 	//"github.com/goinaction/code/chapter2/sample/search"
-	"./search"
+	//"./search"
 )
 
 // init is called prior to main.
