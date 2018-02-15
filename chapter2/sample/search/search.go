@@ -7,6 +7,8 @@ import (
 
 // A map of registered matchers for searching.
 var matchers = make(map[string]Matcher)
+//var matcher2 = map[string]Matcher
+
 
 // Run performs the search logic.
 func Run(searchTerm string) {
@@ -35,6 +37,7 @@ func Run(searchTerm string) {
 		}
 
 		// Launch the goroutine to perform the search.
+		// 这里的闭包非常值得学习：那些传参数，那些用闭包
 		go func(matcher Matcher, feed *Feed) {
 			Match(matcher, feed, searchTerm, results)
 			waitGroup.Done()

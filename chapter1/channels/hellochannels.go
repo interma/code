@@ -9,13 +9,16 @@ var wg sync.WaitGroup
 
 func printer(ch chan int) {
 	for i := range ch {
-		fmt.Printf("Received %d ", i)
+		fmt.Printf("Received %d \n", i)
 	}
 	wg.Done()
 }
 
 // main is the entry point for the program.
 func main() {
+	var i int
+	fmt.Printf("interma init value of i: %d \n", i)
+
 	c := make(chan int)
 	go printer(c)
 	wg.Add(1)

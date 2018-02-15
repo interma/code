@@ -5,7 +5,8 @@ import (
 	"os"
 
 	_ "github.com/goinaction/code/chapter2/sample/matchers"
-	"github.com/goinaction/code/chapter2/sample/search"
+	//"github.com/goinaction/code/chapter2/sample/search"
+	"./search"
 )
 
 // init is called prior to main.
